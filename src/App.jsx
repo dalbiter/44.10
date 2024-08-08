@@ -4,11 +4,13 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import MoodClicker from './MoodClicker'
 import Counter from './Counter'
+import ColorPicker from './ColorPicker'
 
 function App() {
 
   return (
     <>
+      <ColorPicker />
       <Counter />
       <MoodClicker />
     </>
