@@ -5,6 +5,7 @@ import './App.css'
 import MoodClicker from './MoodClicker'
 import Counter from './Counter'
 import ColorPicker from './ColorPicker'
+import SignupForm from './SignupForm'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <ColorPicker />
       <Counter />
       <MoodClicker />
+      <SignupForm />
     </>
   )
 }

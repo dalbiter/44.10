@@ -9,7 +9,11 @@ const useFields = (initialState) => {
             [e.target.name]: e.target.value
         }));    
     };
-    return [formData, handleChange];
+
+    const resetFormData = () => {
+        setFormDate(initialState);
+    }
+    return [formData, handleChange, resetFormData];
 };
 
 export default useFields;
