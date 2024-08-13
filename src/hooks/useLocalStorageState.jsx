@@ -4,8 +4,7 @@ const useLocalStorageState = (key, defaultValue) => {
     const [state, setState] = useState(() => {
         // should technicall add a try/catch here. i.e. if you try to parse something that is not valid JSON it will break
         try {
-            let value = JSON.parse(window.localStorage.getItem(key) || defaultValue);
-            console.log(value)
+            let value = window.localStorage.getItem(key) || defaultValue;
             return value;
         } catch(e) {
             alert(e)
