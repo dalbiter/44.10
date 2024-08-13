@@ -2,13 +2,19 @@ import React from 'react';
 import useFields from './hooks/useFields';
 
 const SignupForm = () => {
-    const [formData, handleChange] = useFields({
+    const [formData, handleChange, resetForm] = useFields({
         username: '',
         email: '',
         password: ''
     });
+
+    const handleSubmit =e => {
+        e.preventDefault;
+        resetForm();
+    };
+
     return (
-        <form action="">
+        <form onSubmit={handleSubmit}>
             <label htmlFor="username">Username: </label>
             <input type="text" 
                    name="username" 
@@ -30,6 +36,7 @@ const SignupForm = () => {
                    onChange={handleChange}
                    placeholder='password' 
             />
+            <button>Submit</button>
         </form>
     )
 };
