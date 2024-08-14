@@ -6,6 +6,7 @@ import MoodClicker from './MoodClicker'
 import Counter from './Counter'
 import ColorPicker from './ColorPicker'
 import SignupForm from './SignupForm'
+import DogDetail from './DogDetail'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Counter />
       <MoodClicker />
       <SignupForm />
+      <DogDetail
     </>
   )
 }
