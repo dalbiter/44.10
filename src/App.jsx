@@ -16,7 +16,7 @@ function App() {
       <Counter />
       <MoodClicker />
       <SignupForm />
-      <DogDetail
+      <DogDetail />
     </>
   )
 }
